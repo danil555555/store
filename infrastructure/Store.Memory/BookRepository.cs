@@ -1,5 +1,5 @@
 ﻿using System.Net.Http.Headers;
-using.System.Linq;
+using System.Linq;
 
 namespace Store.Memory
 {
