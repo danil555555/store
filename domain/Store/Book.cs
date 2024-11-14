@@ -6,7 +6,6 @@ namespace Store
     public class Book
     {
         
-
         public int Id { get; }
 
         public string Isbn { get; }
@@ -15,13 +14,19 @@ namespace Store
 
         public string Title { get; }
 
+        public string Descriptions { get; }
 
-        public Book(int id, string isbn, string author, string title)
+        public decimal Price { get; }
+
+
+        public Book(int id, string isbn, string author, string title, string descriptions, decimal price)
         {
             Id = id;
             Isbn = isbn;
             Author = author;
             Title = title;
+            Descriptions = descriptions;
+            Price = price;
         }
 
         internal static bool IsIsbn(string s)
